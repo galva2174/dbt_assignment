@@ -4,7 +4,7 @@ CREATE INDEX idx_clubs_clubname ON Clubs(ClubName);
 CREATE INDEX idx_events_eventdate ON Events(EventDate);
 
 
-EXPLAIN ANALYZE
+EXPLAIN ANALYZE 
 SELECT * 
 FROM Members m
 WHERE m.ClubID NOT IN (
